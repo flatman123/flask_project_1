@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block blog_content %}
+	{% for post in posts %}
+		<h1>{{ post.title }}</h1>
+		<h5>By:{{ post.author }} Posted on: {{ post.date }}</h5>
+		<p>{{ post.blog_posts }}</p>
+	{% endfor %}
+{% endblock blog_content %}
